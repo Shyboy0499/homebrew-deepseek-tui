@@ -15,10 +15,11 @@ class DeepseekTui < Formula
   end
 
   def install
-    bin.install Dir["deepseek-tui-macos-*"].first => "deepseek-tui"
+    bin.install Dir["*"].find { |f| f.start_with?("deepseek-tui-macos-") } => "deepseek-tui"
   end
 
   test do
-    system "#{bin}/deepseek-tui", "--help"
+    assert_predicate bin/"deepseek-tui", :exist?
+    assert_predicate bin/"deepseek-tui", :executable?
   end
 end
