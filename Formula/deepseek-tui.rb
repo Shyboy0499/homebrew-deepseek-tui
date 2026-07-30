@@ -7,10 +7,10 @@ class DeepseekTui < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/Shyboy0499/DeepSeek-Tui/releases/download/v#{version}/deepseek-tui-macos-arm64"
-      sha256 "REPLACE_WITH_ACTUAL_SHA256_AFTER_FIRST_RELEASE"
+      sha256 "3390168ce5e4dd3300fa9c22496dd32c26fc81692ed591b3cba61864c190349a"
     else
       url "https://github.com/Shyboy0499/DeepSeek-Tui/releases/download/v#{version}/deepseek-tui-macos-x86_64"
-      sha256 "REPLACE_WITH_ACTUAL_SHA256_AFTER_FIRST_RELEASE"
+      sha256 "fe59f7a704c6b0830c7b61f7817f6b99c9cf726cac9468b9baf99fe14bba603e"
     end
   end
 
