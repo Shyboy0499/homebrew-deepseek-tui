@@ -1,16 +1,16 @@
 class DeepseekObsidian < Formula
   desc "AI-native note-taking and research assistant for the terminal with Obsidian integration"
   homepage "https://github.com/Shyboy0499/DeepSeek-Obsidian"
-  version "0.3.0"
+  version "0.3.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/Shyboy0499/DeepSeek-Obsidian/releases/download/v#{version}/deepseek-obsidian-macos-arm64"
-      sha256 "e0ccc460a109e8039befe1426b67cae5eeb335b94ddf4eabaf2db9b914833ace"
+      sha256 "959720cc74a46cdd2ea8bba414f776caff946c62d67648d68c79aa56d59f8264"
     else
       url "https://github.com/Shyboy0499/DeepSeek-Obsidian/releases/download/v#{version}/deepseek-obsidian-macos-x86_64"
-      sha256 "8e054a092f9fc8b2d8bdfa4dbb01bb8953b8c2bf167fadc70bf9fc230f01c182"
+      sha256 "c36f082f61df55d5b5cb9c76159883f9249d38c72ea001ba08248f80787cb53d"
     end
   end
 
